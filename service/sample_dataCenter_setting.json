@@ -1,0 +1,35 @@
+{
+    "control_token":"",
+    "center_ip":"",
+    "center_port":"",
+    "center_name":"",
+    "center_version":"",
+    "err_msg":{
+        "token_err":"The access_token is not available.",
+        "process_err":"Oops, the service has some problems, please retry after 1 minutes <(__)>"
+    },
+    "data_dir1":{
+        "root":"./center_data",
+        "type":[
+            {"name":"json"},
+            {"name":"other"},
+            {"name":"gais"}
+        ]
+    },
+    "data_dir":{
+        "root":"",
+        "type":[
+            {"name":"json"},
+            {"name":"other"},
+            {"name":"gais"}
+        ]
+    },
+    "log_dir":{
+        "root":"./center_logs",
+        "type":[
+            {"name":"err"},
+            {"name":"process"},
+            {"name":"other"}
+        ]
+    }
+}
