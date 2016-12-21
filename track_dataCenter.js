@@ -34,7 +34,12 @@ server.listen(center_port,center_ip,function(){
                 app.use('/'+center_name+'/'+center_version,center);
 });
 
+var check_alive = setInterval(()=>{
+    console.log('[ALIVE] '+new Date());
+},60*60*1000);
+
 center.use(function(req,res,next){
+    console.log('[My track data center] connect from ['+req.ip+'], ['+req.originalUrl+']')
     var access_token = req.body['access_token'];
     if(!access_token){
         access_token = req.query['access_token'];
